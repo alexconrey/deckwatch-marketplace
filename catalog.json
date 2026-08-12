@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-12T00:00:00Z",
+  "plugins": [
+    {
+      "name": "AWS",
+      "slug": "deckwatch-plugin-aws",
+      "description": "Provisions IAM roles, RDS instances, and S3 buckets for Kubernetes workloads using a single unified IAM role per workload.",
+      "author": "alexconrey",
+      "homepage": "https://github.com/alexconrey/deckwatch-plugin-aws",
+      "trust_level": "verified",
+      "tags": ["aws", "rds", "s3", "iam", "irsa"],
+      "latest_version": "0.2.4",
+      "source": {
+        "type": "github",
+        "repo": "alexconrey/deckwatch-plugin-aws",
+        "ref": "v0.2.4",
+        "path": "plugin.wasm",
+        "use_release": true
+      },
+      "allowed_hosts_hint": [
+        "*.amazonaws.com",
+        "iam.us-gov.amazonaws.com",
+        "sts.us-gov-west-1.amazonaws.com"
+      ]
+    }
+  ]
+}
