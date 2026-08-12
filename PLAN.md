@@ -3,7 +3,7 @@
 This repository is the centralized catalog for the deckwatch plugin marketplace,
 served via GitHub Pages. It is a purely static site — no server required.
 
-When complete, `https://deckwatch.io/marketplace/catalog.json` will return the
+When complete, `http://market.deckwatch.io/catalog.json` will return the
 machine-readable plugin catalog that the deckwatch frontend fetches client-side.
 
 ---
@@ -233,7 +233,7 @@ Instructions for submitting a plugin. Cover:
 
 Overview document. Cover:
 - What this repository is (the official deckwatch plugin marketplace catalog)
-- How deckwatch uses it (fetched client-side from `https://deckwatch.io/marketplace/catalog.json`)
+- How deckwatch uses it (fetched client-side from `http://market.deckwatch.io/catalog.json`)
 - How to browse plugins in deckwatch (Settings → Marketplace page)
 - How to install a plugin that isn't in the marketplace (custom URL/GitHub source in settings)
 - How to self-host the catalog for air-gapped environments
