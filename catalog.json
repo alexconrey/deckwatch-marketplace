@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-12T00:00:00Z",
+  "updated_at": "2026-08-13T00:00:00Z",
   "plugins": [
     {
       "name": "AWS",
@@ -9,20 +9,129 @@
       "author": "alexconrey",
       "homepage": "https://github.com/alexconrey/deckwatch-plugin-aws",
       "trust_level": "verified",
-      "tags": ["aws", "rds", "s3", "iam", "irsa"],
-      "latest_version": "0.2.4",
+      "tags": ["aws", "rds", "s3", "iam", "irsa", "govcloud"],
+      "latest_version": "0.5.0",
       "source": {
         "type": "github",
         "repo": "alexconrey/deckwatch-plugin-aws",
-        "ref": "v0.2.4",
+        "ref": "v0.5.0",
         "path": "plugin.wasm",
         "use_release": true
       },
       "allowed_hosts_hint": [
         "*.amazonaws.com",
         "iam.us-gov.amazonaws.com",
-        "sts.us-gov-west-1.amazonaws.com"
+        "sts.us-gov-west-1.amazonaws.com",
+        "*.s3.us-gov-west-1.amazonaws.com"
       ]
+    },
+    {
+      "name": "Redis",
+      "slug": "deckwatch-plugin-redis",
+      "description": "Adds a Redis sidecar to all application deployments. Accessible via the Infrastructure tab — click '+ Add Redis Cache' to enable. Injects REDIS_URL as an environment variable.",
+      "author": "alexconrey",
+      "homepage": "https://github.com/alexconrey/deckwatch-plugin-redis",
+      "trust_level": "verified",
+      "tags": ["redis", "cache", "sidecar"],
+      "latest_version": "0.1.0",
+      "source": {
+        "type": "github",
+        "repo": "alexconrey/deckwatch-plugin-redis",
+        "ref": "v0.1.0",
+        "path": "dist/plugin.wasm",
+        "use_release": true
+      },
+      "allowed_hosts_hint": []
+    },
+    {
+      "name": "Memcached",
+      "slug": "deckwatch-plugin-memcached",
+      "description": "Adds a Memcached sidecar to all application deployments. Injects MEMCACHED_URL as an environment variable.",
+      "author": "alexconrey",
+      "homepage": "https://github.com/alexconrey/deckwatch-plugin-memcached",
+      "trust_level": "verified",
+      "tags": ["memcached", "cache", "sidecar"],
+      "latest_version": "0.1.0",
+      "source": {
+        "type": "github",
+        "repo": "alexconrey/deckwatch-plugin-memcached",
+        "ref": "v0.1.0",
+        "path": "dist/plugin.wasm",
+        "use_release": true
+      },
+      "allowed_hosts_hint": []
+    },
+    {
+      "name": "Nginx Proxy",
+      "slug": "deckwatch-plugin-nginx-proxy",
+      "description": "Adds an Nginx reverse proxy sidecar to all application deployments. Configurable port (80, 443, 8080).",
+      "author": "alexconrey",
+      "homepage": "https://github.com/alexconrey/deckwatch-plugin-nginx-proxy",
+      "trust_level": "verified",
+      "tags": ["nginx", "proxy", "sidecar"],
+      "latest_version": "0.1.0",
+      "source": {
+        "type": "github",
+        "repo": "alexconrey/deckwatch-plugin-nginx-proxy",
+        "ref": "v0.1.0",
+        "path": "dist/plugin.wasm",
+        "use_release": true
+      },
+      "allowed_hosts_hint": []
+    },
+    {
+      "name": "Fluent Bit",
+      "slug": "deckwatch-plugin-fluent-bit",
+      "description": "Adds a Fluent Bit log shipping sidecar to all application deployments. Configurable output endpoint.",
+      "author": "alexconrey",
+      "homepage": "https://github.com/alexconrey/deckwatch-plugin-fluent-bit",
+      "trust_level": "verified",
+      "tags": ["fluent-bit", "logging", "observability", "sidecar"],
+      "latest_version": "0.1.0",
+      "source": {
+        "type": "github",
+        "repo": "alexconrey/deckwatch-plugin-fluent-bit",
+        "ref": "v0.1.0",
+        "path": "dist/plugin.wasm",
+        "use_release": true
+      },
+      "allowed_hosts_hint": []
+    },
+    {
+      "name": "OpenTelemetry Collector",
+      "slug": "deckwatch-plugin-otel",
+      "description": "Adds an OpenTelemetry Collector sidecar to all application deployments. Injects OTEL_EXPORTER_OTLP_ENDPOINT and optionally OTEL_SERVICE_NAME.",
+      "author": "alexconrey",
+      "homepage": "https://github.com/alexconrey/deckwatch-plugin-otel",
+      "trust_level": "verified",
+      "tags": ["otel", "opentelemetry", "tracing", "observability", "sidecar"],
+      "latest_version": "0.1.0",
+      "source": {
+        "type": "github",
+        "repo": "alexconrey/deckwatch-plugin-otel",
+        "ref": "v0.1.0",
+        "path": "dist/plugin.wasm",
+        "use_release": true
+      },
+      "allowed_hosts_hint": []
+    },
+    {
+      "name": "PostgreSQL",
+      "slug": "deckwatch-plugin-postgresql",
+      "description": "Adds a PostgreSQL sidecar to all application deployments with persistent storage. Accessible via the Infrastructure tab — click '+ Add PostgreSQL Database'. Provisions a PVC and injects PG_HOST, POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD, and PGDATA.",
+      "author": "alexconrey",
+      "homepage": "https://github.com/alexconrey/deckwatch-plugin-postgresql",
+      "trust_level": "verified",
+      "tags": ["postgresql", "postgres", "database", "sidecar"],
+      "latest_version": "0.1.0",
+      "source": {
+        "type": "github",
+        "repo": "alexconrey/deckwatch-plugin-postgresql",
+        "ref": "v0.1.0",
+        "path": "dist/plugin.wasm",
+        "use_release": true
+      },
+      "allowed_hosts_hint": []
     }
   ]
 }
