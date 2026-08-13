@@ -10,11 +10,11 @@
       "homepage": "https://github.com/alexconrey/deckwatch-plugin-aws",
       "trust_level": "verified",
       "tags": ["aws", "rds", "s3", "iam", "irsa", "govcloud"],
-      "latest_version": "0.4.0",
+      "latest_version": "0.5.0",
       "source": {
         "type": "github",
         "repo": "alexconrey/deckwatch-plugin-aws",
-        "ref": "v0.4.0",
+        "ref": "v0.5.0",
         "path": "plugin.wasm",
         "use_release": true
       },
