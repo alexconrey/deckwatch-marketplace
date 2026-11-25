@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-13T00:00:00Z",
+  "updated_at": "2026-11-25T00:00:00Z",
   "plugins": [
     {
       "name": "AWS",
@@ -91,24 +91,6 @@
       "source": {
         "type": "github",
         "repo": "alexconrey/deckwatch-plugin-fluent-bit",
-        "ref": "v0.1.0",
-        "path": "dist/plugin.wasm",
-        "use_release": true
-      },
-      "allowed_hosts_hint": []
-    },
-    {
-      "name": "OpenTelemetry Collector",
-      "slug": "deckwatch-plugin-otel",
-      "description": "Adds an OpenTelemetry Collector sidecar to all application deployments. Injects OTEL_EXPORTER_OTLP_ENDPOINT and optionally OTEL_SERVICE_NAME.",
-      "author": "alexconrey",
-      "homepage": "https://github.com/alexconrey/deckwatch-plugin-otel",
-      "trust_level": "verified",
-      "tags": ["otel", "opentelemetry", "tracing", "observability", "sidecar"],
-      "latest_version": "0.1.0",
-      "source": {
-        "type": "github",
-        "repo": "alexconrey/deckwatch-plugin-otel",
         "ref": "v0.1.0",
         "path": "dist/plugin.wasm",
         "use_release": true
